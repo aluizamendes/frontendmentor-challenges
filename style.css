@@ -16,3 +16,123 @@
 font-family: 'Inter', sans-serif;
 font-family: 'Lexend Deca', sans-serif; 
 */
+
+body {
+  background-color: var(--clr-dark-blue);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: min(90%, 1080px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--clr-dark-desaturated-blue);
+  border-radius: 8px;
+}
+
+/* 
+=================
+Left content area
+=================
+*/
+
+.stats-container-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 16%
+}
+
+.left-content {
+  padding: 32px 64px;
+  align-self: center;
+}
+
+h1, h3, p {
+  font-family: 'Inter', sans-serif;
+}
+
+.highlight-txt {
+  color: var(--clr-soft-violet);
+}
+
+h1 { 
+  font-size: 36px;
+  margin-bottom: 32px; 
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 64px;
+  color: var(--clr-transparent-white-headings);
+  line-height: 28px;
+}
+
+h3 { 
+  font-size: 24px; 
+}
+
+.stats-item span {
+  font-family: 'Lexend Deca', sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  color: var(--clr-transparent-white-text);
+}
+
+/* 
+==========================
+Right content area (image) 
+==========================
+*/
+
+.right-content {
+  background-image: url(./img/image-header-desktop.jpg);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-color: var(--clr-soft-violet);
+  height: 446px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 1025px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .left-content {
+    grid-area: 2;
+    padding: 32px 40px;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 48px;
+  }
+
+  .stats-item {
+    text-align: center;
+  }
+
+  .stats-container-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .right-content {
+    background-image: url(./img/image-header-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px 8px 0px 0px;
+  }
+}
