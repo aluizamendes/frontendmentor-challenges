@@ -71,7 +71,32 @@ left content
   background-color: var(--clr-cyan-primary);
   border-radius: 0px 0px 0px 8px;
   padding: 54px;
+}
 
+.left-content h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.price-text {
+  color: var(--clr-cyan-secondary);
+  margin-left: 12px;
+}
+
+.left-content p {
+  color: var(--clr-light-gray);
+  margin: 8px  0 32px 0;
 }
 
 .left-content button {
@@ -85,7 +110,7 @@ left content
   padding: 16px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(5, 95, 126, 0.496);
+  box-shadow: 0 4px 16px rgba(5, 96, 126, 0.334);
   transition: all 0.2s ease-in-out;
 }
 
