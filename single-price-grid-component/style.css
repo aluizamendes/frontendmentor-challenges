@@ -30,6 +30,8 @@ body {
 .container-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-radius: 8px;
+  box-shadow: 0 2px 24px rgba(36, 66, 95, 0.151);
 }
 
 /* 
@@ -116,7 +118,6 @@ left content
 
 .left-content button:hover {
   background-color: #acca26;
-  
 }
 
 /* 
@@ -129,5 +130,15 @@ right content
   background-color: var(--clr-cyan-secondary);
   border-radius: 0px 0px 8px 0px;
   padding: 54px;
+}
 
+.right-content h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.right-content p {
+  color: #dcfbff;
+  font-size: var(--fs-body-copy);
+  line-height: 24px;
 }
