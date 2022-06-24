@@ -147,7 +147,7 @@ right content
 
 @media (max-width: 800px) {
   .wrapper {
-    margin: 5%;
+    margin: 8%;
   }
 }
 
@@ -160,9 +160,14 @@ right content
 
   .top-content {
     grid-column: 1;
-    background-color: #fff;
-    padding: 54px;
-    border-radius: 8px 8px 0px 0px;
+  }
+
+  .left-content {
+    border-radius: 0px;
+  }
+
+  .right-content {
+    border-radius: 0px 0px 8px 8px;
   }
 
 }
