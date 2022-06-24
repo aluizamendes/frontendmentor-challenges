@@ -142,3 +142,27 @@ right content
   font-size: var(--fs-body-copy);
   line-height: 24px;
 }
+
+/* Media queries */
+
+@media (max-width: 800px) {
+  .wrapper {
+    margin: 5%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-content {
+    grid-column: 1;
+    background-color: #fff;
+    padding: 54px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+}
